@@ -1,8 +1,8 @@
-import 'package:avataar_generator/enums.dart';
-import 'package:avataar_generator/methods/clothes.dart';
-import 'package:avataar_generator/methods/colors.dart';
-import 'package:avataar_generator/methods/face.dart';
-import 'package:avataar_generator/methods/tops.dart';
+import 'enums.dart';
+import 'methods/clothes.dart';
+import 'methods/colors.dart';
+import 'methods/face.dart';
+import 'methods/tops.dart';
 import 'dart:convert';
 
 String getSvg(Options options) {
@@ -104,20 +104,20 @@ String faceSvg(Mouth mouth, Eyes eyes, Eyebrow eyeBrow) {
 }
 
 class Options {
-  AvatarStyle style;
-  Top top;
-  Accessories accessories;
-  HairColor hairColor;
-  FacialHair facialHair;
-  Cloth clothes;
-  ClothColor clothColor;
-  Eyes eyes;
-  Eyebrow eyebrow;
-  Mouth mouth;
-  Skin skin;
-  HatColor hatColor;
-  FacialHairColor facialHairColor;
-  Graphic graphic;
+  late AvatarStyle style;
+  late Top top;
+  late Accessories accessories;
+  late HairColor hairColor;
+  late FacialHair facialHair;
+  late Cloth clothes;
+  late ClothColor clothColor;
+  late Eyes eyes;
+  late Eyebrow eyebrow;
+  late Mouth mouth;
+  late Skin skin;
+  late HatColor hatColor;
+  late FacialHairColor facialHairColor;
+  late Graphic graphic;
 
   Options() {
     style = AvatarStyle.circle;
